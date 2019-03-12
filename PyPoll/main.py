@@ -65,14 +65,9 @@ for key, value in candidate_information.items():
 
 # # makes winner_list a str with the first entry
 # winner = winner_list[0]
-
-# #only runs if there is a tie and puts additional winners into a string separated by commas
-# if len(winner_list) > 1:
-#     for w in range(1, len(winner_list)):
-#         winner = winner + ", " + winner_list[w]
         
 # Generate Paragraph Analysis Output
-output = (
+output_1 = (
 f"Election Results \n"
 f"----------------------- \n"
 f"Total Votes: {total_vote_count} \n"
@@ -81,22 +76,22 @@ f"----------------------- \n")
 # Create candidate specific message with their voting record
 # Print all of the results (to terminal)
 for key, v in candidate_information.items():
-    output = output + f"{key}: {(v/total_vote_count)*100:.2f}% ({v}) \n"
+    output_1 = output_1 + f"{key}: {(v/total_vote_count)*100:.2f}% ({v}) \n"
 
-print(output)
+print(output_1)
 
 # Generate winner
-output = (
+output_2 = (
 f"----------------------- \n"
 f"Winner: {winner} \n"
 f"----------------------- \n")
 
 #Print
-print(output)
+print(output_2)
 
 #Set path for result file
 filename = "PyPoll.txt"
 
 # Save the results to analysis text file
 with open(filename, "w") as txtwrite:
-    txtwrite.write(output+"\n")
+    txtwrite.write(output_1+output_2+"\n")
