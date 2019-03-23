@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Election Results 
 ------------------------- 
 Total Votes: 
@@ -8,4 +9,16 @@ Li:
 O'Tooley: 
 ------------------------- 
 Winner: Khan
+=======
+Election Results 
+------------------------- 
+Total Votes: 
+-------------------------
+Khan: 
+Correy: 
+Li: 
+O'Tooley: 
+------------------------- 
+Winner: Khan
+>>>>>>> 2080cea94c08148db1206e66d8afa7daad957653
 -------------------------
